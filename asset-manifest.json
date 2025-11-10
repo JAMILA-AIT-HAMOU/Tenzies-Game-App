@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Tenzies-Game-App/static/css/main.a53e8641.css",
-    "main.js": "/Tenzies-Game-App/static/js/main.1ea0c9cb.js",
+    "main.css": "/Tenzies-Game-App/static/css/main.8177b04a.css",
+    "main.js": "/Tenzies-Game-App/static/js/main.3e8a10ca.js",
     "static/js/488.7ae14e12.chunk.js": "/Tenzies-Game-App/static/js/488.7ae14e12.chunk.js",
     "index.html": "/Tenzies-Game-App/index.html",
-    "main.a53e8641.css.map": "/Tenzies-Game-App/static/css/main.a53e8641.css.map",
-    "main.1ea0c9cb.js.map": "/Tenzies-Game-App/static/js/main.1ea0c9cb.js.map",
+    "main.8177b04a.css.map": "/Tenzies-Game-App/static/css/main.8177b04a.css.map",
+    "main.3e8a10ca.js.map": "/Tenzies-Game-App/static/js/main.3e8a10ca.js.map",
     "488.7ae14e12.chunk.js.map": "/Tenzies-Game-App/static/js/488.7ae14e12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a53e8641.css",
-    "static/js/main.1ea0c9cb.js"
+    "static/css/main.8177b04a.css",
+    "static/js/main.3e8a10ca.js"
   ]
 }
