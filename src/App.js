@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
 
 // Constants for game configuration
-const GAME_DURATION = 40;
+const GAME_DURATION = 35;
 const DICE_COUNT = 10;
 
 export default function App() {
@@ -126,14 +126,9 @@ export default function App() {
         <>
           {gameWon && <Confetti />}
           
-          {/* Screen reader announcements */}
           <div aria-live="polite" className="sr-only">
-            {gameWon && (
-              <p>Congratulations! You won in {rolls} rolls! Press "New Game" to play again.</p>
-            )}
-            {hasLost && (
-              <p>Time's up! You failed to complete the game. Press "Try Again" to play again.</p>
-            )}
+            {gameWon && <p>Congratulations! You won in {rolls} rolls!</p>}
+            {hasLost && <p>Time's up! You failed to complete the game.</p>}
           </div>
 
           <h1 className="title">🎲 Tenzies</h1>
@@ -142,7 +137,6 @@ export default function App() {
             current value between rolls.
           </p>
 
-          {/* Game stats */}
           <div className="game-stats">
             <p className="rolls">Rolls: {rolls}</p>
             {timeLeft > 0 ? (
@@ -162,15 +156,9 @@ export default function App() {
             {gameWon ? "New Game" : hasLost ? "Try Again" : "Roll"}
           </button>
 
-          {/* Game status messages */}
           {gameWon && (
             <p className="win-message">
               🎉 Congratulations! You won in {rolls} rolls! 🎉
-            </p>
-          )}
-          {hasLost && !gameWon && (
-            <p className="lose-message">
-              💀 Time's up! Better luck next time! 💀
             </p>
           )}
         </>
